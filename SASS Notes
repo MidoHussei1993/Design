@@ -1,0 +1,98 @@
+property in css
+<header>
+	<h2 role='textbox'>And stay alive...</h2>
+</header>
+
+
+header {
+	overflow: hidden;
+	height: 100vh;
+	background-color:red;
+	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2017/17_04_art_bw_butterfly_bg.jpg) 50%/ cover;
+	mix-blend-mode:lighten;
+}
+
+h2 {
+	color: white;
+	mix-blend-mode: difference;
+	font: 900 35vmin/35vh cookie, cursive;
+	text-align: center
+}
+=====================================================================================================
+
+background: url(../img/header.jpg),linear-gradient(steelblue,firebrick);
+background-blend-mode: overlay; make image under gridiant
+
+
+-------------------------------------------------------
+h2 {
+  background: inherit;
+  background-clip: text;
+  color: transparent;
+  filter: invert(1);
+}
+
+=============================================
+$warning-color: orange;
+decleare varible in sass
+
+too use it
+$color: red;
+.link {
+color: $color;
+}
+===========================
+
+calc(100% - 20px);
+===================================================
+ #{} interpolation syntax
+ 
+Perform the steps beneath to learn how to use variable interpolation in Sass to
+dynamically create property and selector names:
+ Write down the Sass code as follows in a Sass template called
+interpolation.scss: #{ }
+
+$name: class;
+$direction: left;
+$units: px;
+.#{$name} {
+margin-#{$direction}: 20#{$units};
+}
+==========================================
+@mixin
+
+=circle($color,$height,$width)
+  border-color: $color;
+  width: $width;
+  hieght: $height;
+  
+  
+to use it 
+heade
+  +circle(red , 100px , 50px)
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
